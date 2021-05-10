@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="header">
+    <div class="left-group">
+      <a href="index.html"><img src="images/Lydia Rose.png"></a>
+    </div>
+    <div class="right-group">
+      <hr>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="margins">
+    <h1>Portfolio</h1>
+    <p>At the top of this page you will find a variety my favorite works from over the years, but feel free to
+      scroll to the bottom to view specific types of work.</p>
+    <div class="columns-3">
+      <div class="cards">
+        <a href="portfolio/portfolio style guide.pdf">
+        <img src="images/logo.png">
+        <h3>Title: </h3>
+        <p>Portfolio Website Style Guide</p>
+        <h3>Type: </h3>
+        <p>Style Guide</p>
+        <h3>Tools Used: </h3>
+        <p>Figma</p>
+        <h3>Year: </h3>
+        <p>2021</p>
+        </a>
+      </div>
+
+      <div class="cards">
+        <a href="portfolio/resume.pdf">
+        <img src="images/logo.png">
+        <h3>Title: </h3>
+        <p>My Resume</p>
+        <h3>Type: </h3>
+        <p>Resume</p>
+        <h3>Tools Used: </h3>
+        <p>Microsoft Word</p>
+        <h3>Year: </h3>
+        <p>2021</p>
+        </a>
+      </div>
+      <div class="cards">
+        <a href="portfolio/WRIT 3562W Proposal.pdf">
+        <img src="images/logo.png">
+        <h3>Title: </h3>
+        <p>International Business Study Proposal</p>
+        <h3>Type: </h3>
+        <p>Proposal</p>
+        <h3>Tools Used: </h3>
+        <p>Microsoft Word</p>
+        <h3>Year: </h3>
+        <p>2019</p>
+        </a>
+      </div>
+    </div>
+    <hr>
+    <button class="accordion">Design Projects</button>
+    <div class="panel">
+      <div class="columns-3">
+        <div class="cards">
+          <a href="portfolio/InDesign Example.pdf">
+          <img src="images/logo.png">
+          <h3>Title: </h3>
+          <p>Coffee Shop Menu</p>
+          <h3>Type: </h3>
+          <p>Trifold Brochure</p>
+          <h3>Tools Used: </h3>
+          <p>Adobe InDesign</p>
+          <h3>Year: </h3>
+          <p>2019</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <button class="accordion">Newsletters</button>
+    <div class="panel">
+      <div class="columns-3">
+        <div class="cards">
+          <a href="portfolio/Tsushin 1910.pdf">
+          <img src="images/logo.png">
+          <h3>Title: </h3>
+          <p>Tsushin for October 2019</p>
+          <h3>Type: </h3>
+          <p>Newsletter</p>
+          <h3>Tools Used: </h3>
+          <p>Microsoft Publisher</p>
+          <h3>Year: </h3>
+          <p>2019</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <button class="accordion">日本語のサンプル</button>
+    <div class="panel">
+      <div class="columns-3">
+        <div class="cards">
+          <a href="portfolio/JPN3022 Speech.pdf">
+          <img src="images/logo.png">
+          <h3>Title: </h3>
+          <p>クリスチャンの日本人</p>
+          <h3>Type: </h3>
+          <p>Speech</p>
+          <h3>Tools Used: </h3>
+          <p>Google Docs</p>
+          <h3>Year: </h3>
+          <p>2020</p>
+          </a>
+        </div>
+        <div class="columns-3">
+          <div class="cards">
+            <a href="portfolio/JPN3021 Speech.pdf">
+            <img src="images/logo.png">
+            <h3>Title: </h3>
+            <p>私のおばあちゃん</p>
+            <h3>Type: </h3>
+            <p>Speech</p>
+            <h3>Tools Used: </h3>
+            <p>Microsoft Word</p>
+            <h3>Year: </h3>
+            <p>2019</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+  </div>
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
+
+  <div class="about-footer">
+    <p>Copyright © 2021 Lydia Rose</p>
+  </div>
+</body>
+</html>
