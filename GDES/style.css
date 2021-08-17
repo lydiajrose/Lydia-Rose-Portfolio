@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+*{
+  break-inside: avoid;
+	box-sizing: border-box;
+}
+
+h1{
+  font-family: 'Nunito', sans-serif;
+  font-size: 36px;
+	margin-top: 60px;
+}
+
+h2{
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+	margin: 14px 0px 0px;
+}
+
+p{
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+  margin: 16px 0px;
+}
+
+a{
+  text-decoration: none;
+  color: #BA2C13;
+}
+
+hr{
+  border-bottom: 2px solid black;
+	margin: 0px;
+}
+
+.header{
+  background-color: #8DA8BD;
+  padding: 20px 15px;
+  text-align: center;
+}
+.header-2{
+  text-align: right;
+}
+
+.nav{
+  position: sticky;
+  top: 0;
+}
+
+.title{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: white;
+  column-count:2;
+  column-gap: 0;
+  text-align: left;
+}
+.catd{
+	display: none;
+}
+
+.menu{
+  background-color: #8DA8BD;
+  text-align: center;
+  padding-top: 20px;
+	height: calc(100vh - 200px);
+}
+.menu a{
+  color: white;
+}
+.menu h2{
+	padding-top: 14px;
+}
+
+.space-menu{
+	margin: 0px 15px;
+	padding-top: 36px;
+}
+.space-menu img{
+  width: 100%;
+}
+
+.circle{
+  background-color: #BA2C13;
+  height: 218px;
+  width: 218px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 48px;
+  margin: 32px auto 0 auto;
+}
+.circle a{
+  color: white;
+  margin-top: 80px;
+  display: inline-block;
+}
+
+.about{
+	margin: 0px 15px;
+}
+
+.form{
+	background-color: #8DA8BD;
+	color: white;
+	padding-bottom: 14px;
+}
+.form hr{
+	border-bottom: 2px solid white;
+}
+.form h1{
+	margin-top: 14px;
+}
+
+select{
+	font-family: 'Crimson Text', serif;
+  font-size: 16px;
+	border: 2px solid black;
+	width: 100%;
+}
+
+.text input{
+	font-family: 'Crimson Text', serif;
+  font-size: 16px;
+	border: 2px solid black;
+	width: 100%;
+}
+.radio input{
+	width: 50%;
+}
+
+textarea{
+	width: 100%;
+	font-family: 'Crimson Text', serif;
+  font-size: 16px;
+	border: 2px solid black;
+}
+
+button{
+	background-color: #BA2C13;
+	color: white;
+	font-size: 24px;
+	font-family: 'Nunito', sans-serif;
+	width: 188px;
+	height: 46px;
+	border-radius: 10px;
+	border: none;
+	margin: auto;
+	display: block;
+}
+
+.footer{
+  background-color: black;
+  color: white;
+}
+.footer .columns{
+	margin: 0px 15px;
+	padding: 15px 0px;
+}
+.footer p{
+ font-size: 14px;
+}
+
+@media screen and (min-width: 1024px){
+  h1{
+    font-size: 48px;
+		margin-top: 60px;
+  }
+  h2{
+  	font-size: 36px;
+		margin: 12px 0px 0px;
+  }
+  p{
+    font-size: 24px;
+		margin: 24px 0px;
+  }
+
+  .header{
+    padding: 20px 100px;
+  }
+
+  .title{
+    font-size: 36px;
+  }
+	.catd{
+		display: block;
+	}
+	.catm{
+		display: none;
+	}
+
+  .columns{
+    column-count: 2;
+    column-gap: 20px;
+  }
+	.space-menu img{
+		padding-bottom: 25px;
+	}
+
+  .circle{
+    height: 262px;
+    width: 262px;
+		margin: 0px;
+		margin-right: 20px;
+		display: inline-block;
+		vertical-align: top;
+  }
+  .circle a{
+    margin-top: 100px;
+  }
+
+	.about{
+		display: inline-block;
+		width: calc(100% - 316px);
+	}
+	.about p{
+		margin-top: 0px;
+	}
+	.circle-columns{
+		margin: 64px 100px;
+	}
+
+	.menu{
+		height: calc(100vh - 225px);
+	}
+	.menu a:hover{
+		color: #BA2C13;
+	}
+	.menu h2{
+		padding-top: 12px;
+	}
+
+	.space-menu{
+		margin: 0px 100px;
+	}
+
+	.form h1{
+		margin-top: 16px;
+	}
+
+	.column-2 h2{
+		padding-top: 11px;
+	}
+	
+	select{
+	  font-size: 24px;
+	}
+
+	.text input{
+	  font-size: 24px;
+	}
+
+	label{
+		font-size: 24px;
+	}
+
+	textarea{
+	  font-size: 24px;
+	}
+
+	button{
+		background-color: white;
+		color: #BA2C13;
+		font-size: 24px;
+		font-family: 'Nunito', sans-serif;
+		width: 188px;
+		height: 46px;
+	}
+	button:hover{
+		background-color: #BA2C13;
+		color: white;
+	}
+
+  .footer{
+		padding: 20px 0px 0px;
+  }
+	.footer .columns{
+		margin: 0px 100px;
+	}
+	.footer p{
+	 font-size: 20px;
+	}
+}
